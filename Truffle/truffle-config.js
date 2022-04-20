@@ -12,6 +12,14 @@ module.exports = {
       chainId: 1337,
       network_id: 1337,
     },
+    rinkeby: {
+      provider: function() { 
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/83355392010a45fc9aecc71de1d6b35d");
+       },
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000,
+    }
   },
   //
   // Truffle DB is currently disabled by default; to enable it, change enabled:
